@@ -22,3 +22,6 @@ install:
 script: PYTHONPATH=extplugins nosetests --where=tests --verbosity=3
 
 build_image: drydock/u14pytpls:prod 
+services:
+  - mysql 
+  - postgres
